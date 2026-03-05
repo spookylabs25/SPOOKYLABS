@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spookylabs</title>
+    <link rel="stylesheet" href="Spookylabs.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/58934e4ab9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ===========================================Home============================================ -->
+
+    <section class="hero" id="home">
+
+        <nav id="desktop-nav">
+            <div class="logo">
+                <img src="Spookygif.gif" class="logo-gif">
+                <img src="spookylabslogo.png" class="main-logo">
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                  <!--  <li><a href="#services">Services</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="cart-icon">Cart<i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></a></li>                       
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">
+                <img src="Spookygif.gif" class="logo-gif">
+                <img src="spookylabslogo.png" class="main-logo">
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+                    <!-- <li><a href="#services" onclick="toggleMenu()">Services</a></li> -->
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a1 href="#" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span>Cart</a1></li>
+                </ul>
+            </div>
+        </nav>
+        
+<div class="hero-content">
+    <h1>Ideas Printed Into Reality</h1>
+    <p> From unique desk toys to practical utility items,
+            every piece is designed and printed with precision.
+           <br> Need something custom? I can bring your idea to life.</p>
+        <div class="hero-buttons">
+           <a href="#gallery" class="btn-primary">Explore Collection</a>
+           <a href="#contact" class="btn-secondary">Request Custom Print</a>
+        </div>    
+</div>
+
+    </section>
+<script>
+function toggleMenu() {
+    const menu = document.querySelector("#hamburger-nav .menu-links");
+    const icon = document.querySelector("#hamburger-nav .hamburger-icon");
+
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
+</script>
+
+<!-- ================================Introduction=============================================  -->
+
+<section class="intro">
+
+    <div class="intro-content">
+        <h1>Creative 3D Prints for Everyday Life</h1>
+        <p>
+            From unique desk toys to practical utility items,
+            every piece is designed and printed with precision.
+            Need something custom? I can bring your idea to life.
+        </p>
+    </div>
+<div class="features">
+      <div class="feature-card">
+        <h2>Desk Toys</h2>
+        <p>Fun articulated figures, stress toys, and creative prints.</p>
+    </div>
+
+    <div class="feature-card">
+        <h2>Utility Items</h2>
+        <p>Functional prints designed to make everyday life easier.</p>
+    </div>
+
+    <div class="feature-card">
+        <h2>Custom Designs</h2>
+        <p>Your idea → modeled → printed → delivered.</p>
+    </div>
+</div>
+</section>
+
+<!-- ============================================Gallery=========================================== -->
+
+<section id="gallery">
+    <h3>Gallery</h3>
+        <div class="gallery-list">
+
+            <div class="gall">
+                <img src="Phn holder.png">
+                <div class="layer">
+                    <h3> Phone & iwatch Stand</h3>
+                    <a href="CAM.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="gall">
+                <img src="Temple.png">
+                <div class="layer">
+                    <h3> Table Top South Indian Temple</h3>
+                    <a href="CAM.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="gall">
+                <img src="Projector Wallmount Stand.png">
+                <div class="layer">
+                    <h3> Projector Wall Mount Stand</h3>
+                    <a href="CAM.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+
+            <div class="gall">
+                <img src="Horn Stand.png">
+                <div class="layer">
+                    <h3> Horn Holder</h3>
+                    <a href="CAM.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="gall">
+                <img src="Pot.png">
+                <div class="layer">
+                    <h3>Storage Pot</h3>
+                    <a href="CAM.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="gall">
+                <img src="blade.png">
+                <div class="layer">
+                    <h3>Utility Knife</h3>
+                    <a href="CAM.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+
+    </div>
+</section>
+
+<!-- ===========================================Services============================================ -->
+<!--
+<section id="services">
+    <h1>Sevrice</h1>
+       
+
+
+
+
+    </div>
+</section>
+-->
+<!-- ===========================================Contact============================================ -->
+
+<section id="contact">
+    <h6>Contact</h6>
+    <div class="contact-containers">
+        <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-envelope"></i>spookylabs25@gmail.com</p>
+           <!--         <p><i class="fa-solid fa-phone"></i>+44 7436 205379</p>-->
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_spookylabs_?igsh=ZzBlZXVlbTBnbXRt&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+    
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                    </form>
+    
+                    <span id="msg"></span>
+    
+                </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
